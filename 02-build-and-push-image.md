@@ -27,4 +27,8 @@ Push the versioned tag:
 `docker push <dockerhub-username>/intent-classifier:v1`
 
 5. Verify the Image
+
+
+
+Example request: curl -X POST http://localhost:6000/predict -H "Content-Type: application/json" -d '{"text":"I want to cancel my subscription"}'
 docker pull <dockerhub-username>/intent-classifier:latest
